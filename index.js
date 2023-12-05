@@ -1,4 +1,3 @@
-
 const searchIcon = document.querySelector('.bx-search');
 
 const search = document.querySelector('.search-icon')
@@ -83,3 +82,4 @@ drinksBox.addEventListener('click', () => {
 })
 
 
+lightGallery(document.querySelector('.image-gallery'))
