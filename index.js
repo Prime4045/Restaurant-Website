@@ -81,5 +81,32 @@ drinksBox.addEventListener('click', () => {
     desserts.style.display = "none"
 })
 
-
 lightGallery(document.querySelector('.image-gallery'))
+
+const section2 = document.querySelector('#Reservation')
+
+document.querySelector('.ResNavLink').addEventListener('click', (e) =>{
+    console.log("Res Clicked");
+    e.preventDefault()
+    section2.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    })
+})
+document.querySelector('.ResFooterLink').addEventListener('click', (e) =>{
+    console.log("Res Clicked");
+    e.preventDefault()
+    section2.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    })
+})
+
+
+
+// addEventListener('click', function(e){
+//     e.preventDefault()
+//     // document.querySelector(e.getAttribute('href')).scrollIntoView({
+//     //     behavior: 'smooth'
+//     // });
+//     console.log(getAttribute('href'))
