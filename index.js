@@ -86,7 +86,6 @@ lightGallery(document.querySelector('.image-gallery'))
 const section2 = document.querySelector('#Reservation')
 
 document.querySelector('.ResNavLink').addEventListener('click', (e) =>{
-    console.log("Res Clicked");
     e.preventDefault()
     section2.scrollIntoView({
         behavior: 'smooth',
@@ -94,9 +93,25 @@ document.querySelector('.ResNavLink').addEventListener('click', (e) =>{
     })
 })
 document.querySelector('.ResFooterLink').addEventListener('click', (e) =>{
-    console.log("Res Clicked");
     e.preventDefault()
     section2.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    })
+})
+
+const section5 = document.querySelector('#dish')
+
+document.querySelector('.head-nav-dish').addEventListener('click', (e) =>{
+    e.preventDefault()
+    section5.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    })
+})
+document.querySelector('.foot-nav-dish').addEventListener('click', (e) =>{
+    e.preventDefault()
+    section5.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
     })
